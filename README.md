@@ -1,50 +1,22 @@
-# React + TypeScript + Vite
+To run the project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+then `npm install` and `npm run dev`, client will be available at `http://localhost:5173/`
 
-Currently, two official plugins are available:
+You will be limited to 60 requests per hour, if you want to increase this limit you can create a `.env` file (or copy the .env.dist file) and add your github token in the `REACT_APP_GITHUB_API_TOKEN` variable.
+To create a token, go to your github account settings, then developer settings, then personal access tokens and generate a new token.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+Asked:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- search repositories by organization name
+- display a list of repositories with their name, description, number of stars and number of forks etc..
+- clickable card to display more details about the repository
+- display a list of contributors with their name and number of contributions
+- cached data to reduce the amount of requests and optimize the performance
+- pagination when more than 10 repositories are found
+- select that allow to sort the repositories by name, created, updated etc ..
 
-- Configure the top-level `parserOptions` property like this:
+Bonus:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+- Design inspired by the real black theme github application
