@@ -1,0 +1,32 @@
+@import "../design-system/quarks/size.scss";
+@import "../design-system/quarks/colors.scss";
+
+.app-c-git-card {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+.app-c-git-card__footer {
+  display: flex;
+  gap: $ds-padding--L;
+}
+
+.app-c-git-card__footer-icon {
+  font-size: 16px !important;
+  color: $ds-color-text-light;
+}
+
+.app-c-git-card__footer-item-container {
+  display: flex;
+  gap: $ds-padding--S;
+  align-items: center;
+}
+
+.app-c-git-card__collapse-container {
+  display: flex;
+  flex-direction: column;
+  gap: $ds-padding--S;
+  margin-top: $ds-padding--M;
+  margin-bottom: $ds-padding--M;
+}

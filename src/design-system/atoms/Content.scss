@@ -1,0 +1,29 @@
+@import "../quarks/size.scss";
+
+.ds-content {
+  height: 100%;
+  width: $ds-content-size--L;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: $ds-padding--XL;
+  margin-top: $ds-padding--XL;
+  display: flex;
+  flex-direction: column;
+  gap: $ds-padding--M;
+}
+
+@media only screen and (max-width: $ds-break-point--M) {
+  .ds-content {
+    width: $ds-content-size--M;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media only screen and (max-width: $ds-break-point--S) {
+  .ds-content {
+    width: $ds-content-size--XS;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}

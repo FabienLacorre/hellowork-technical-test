@@ -1,0 +1,48 @@
+@import "../quarks/colors.scss";
+@import "../quarks/size.scss";
+
+.ds-c-header {
+  z-index: 9999;
+  position: sticky;
+  top: 0;
+  height: 64px;
+
+  border-bottom: 1px solid $ds-border-color;
+  background: $ds-background-color;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ds-c-header--center-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: $ds-content-size--L;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  gap: $ds-padding--S;
+}
+
+.ds-c-header--user-hello {
+  right: 0;
+  position: absolute;
+}
+
+@media only screen and (max-width: $ds-break-point--M) {
+  .ds-c-header--center-wrapper {
+    width: $ds-content-size--M;
+  }
+}
+
+@media only screen and (max-width: $ds-break-point--S) {
+  .ds-c-header--center-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: $ds-padding--XL;
+    margin-right: $ds-padding--XL;
+  }
+}

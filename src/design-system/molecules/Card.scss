@@ -1,0 +1,18 @@
+@import "../quarks/size.scss";
+@import "../quarks/colors.scss";
+
+.ds-c-card {
+  cursor: pointer;
+  background-color: $ds-secondary-background-color;
+  padding: $ds-padding--M;
+  border: 1px solid $ds-border-color;
+  border-radius: $ds-app-radius--S;
+  display: flex;
+  flex-direction: column;
+  gap: $ds-padding--S;
+  transition: 0.2s ease-in-out;
+
+  &:hover {
+    background-color: $ds-secondary-background-color--hover;
+  }
+}

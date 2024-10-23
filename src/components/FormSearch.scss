@@ -1,0 +1,7 @@
+@import "../design-system/quarks/size.scss";
+
+.app-c-form-search {
+  display: flex;
+  justify-content: center;
+  gap: $ds-padding--S;
+}

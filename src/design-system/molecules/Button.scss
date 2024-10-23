@@ -1,0 +1,34 @@
+@import "../quarks/size.scss";
+@import "../quarks/colors.scss";
+
+.ds-c-button {
+  cursor: pointer;
+
+  color: $ds-pure-white;
+  background-color: $ds-primary-color;
+  border: 1px solid $ds-primary-color;
+  font-size: $ds-typography--S;
+  border-radius: $ds-app-radius--S;
+  text-align: center;
+  display: inline-block;
+  outline: none;
+  padding: $ds-no-padding $ds-padding--M;
+  transition: 0.2s ease-out;
+  line-height: 30px;
+  font-weight: 400;
+
+  &:hover {
+    background-color: $ds-primary-dark-color;
+    border-color: $ds-primary-dark-color;
+  }
+
+  &:active {
+    background-color: $ds-primary-color;
+  }
+
+  &:disabled {
+    background-color: $ds-light-grey;
+    border-color: $ds-light-grey;
+    cursor: not-allowed;
+  }
+}

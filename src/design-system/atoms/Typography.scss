@@ -1,0 +1,26 @@
+@import "../quarks/size.scss";
+@import "../quarks/colors.scss";
+
+.ds-c-typography--bold {
+  font-weight: bold;
+}
+
+.ds-c-typography--XS {
+  font-size: $ds-typography--XS;
+}
+
+.ds-c-typography--S {
+  font-size: $ds-typography--S;
+}
+
+.ds-c-typography--M {
+  font-size: $ds-typography--M;
+}
+
+.ds-c-typography--L {
+  font-size: $ds-typography--L;
+}
+
+.ds-c-typography--secondary {
+  color: $ds-color-text-light;
+}

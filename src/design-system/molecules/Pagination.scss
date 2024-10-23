@@ -1,0 +1,6 @@
+@import "../quarks/size.scss";
+
+.ds-c-pagination {
+  display: flex;
+  gap: $ds-padding--S;
+}

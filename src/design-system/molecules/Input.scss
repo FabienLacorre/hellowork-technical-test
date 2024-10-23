@@ -1,0 +1,17 @@
+@import "../quarks/size.scss";
+@import "../quarks/colors.scss";
+
+.ds-c-input {
+  background-color: $ds-secondary-background-color;
+  padding: $ds-padding--S;
+  border-radius: $ds-app-radius--S;
+  border: 1px solid $ds-border-color;
+  width: 100%;
+  font-size: 14px;
+  color: $ds-color-text;
+
+  &:focus {
+    outline: none;
+    border: 1px solid $ds-primary-color;
+  }
+}
