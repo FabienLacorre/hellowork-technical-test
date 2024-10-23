@@ -10,7 +10,6 @@ import clsx from "clsx";
 import "./GitCard.scss";
 import { useState } from "react";
 import { Collapse } from "../design-system/atoms/Collapse";
-import { light } from "@mui/material/styles/createPalette";
 import { useQueryContributorsByRepository } from "../api/queries";
 
 export interface GitCardProps {
