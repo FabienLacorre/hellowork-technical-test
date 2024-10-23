@@ -10,7 +10,7 @@ To run the project
 
 then `npm install` and `npm run dev`, client will be available at `http://localhost:5173/`
 
-You will be limited to 60 requests per hour, if you want to increase this limit you can create a `.env` file (or copy the .env.dist file) and add your github token in the `REACT_APP_GITHUB_API_TOKEN` variable.
+You will be limited to 60 requests per hour, if you want to increase this limit you can create a `.env` file (or copy the .env.dist file) and add your github token in the `VITE_GITHUB_API_TOKEN` variable.
 To create a token, go to your github account settings, then developer settings, then personal access tokens and generate a new token.
 
 ## Features
