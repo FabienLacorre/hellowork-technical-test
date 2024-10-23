@@ -3,7 +3,7 @@ import { axiosClient } from "./axios";
 
 const URL = "https://api.github.com";
 
-const API_TOKEN = process.env.REACT_APP_GITHUB_API_TOKEN;
+const API_TOKEN = import.meta.env.REACT_APP_GITHUB_API_TOKEN;
 
 const queryOrganizationRepositoriesByName = async (
   organizationName: string,

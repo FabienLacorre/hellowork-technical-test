@@ -1,5 +1,5 @@
-import clsx from "clsx";
 import "./Typography.scss";
+import clsx from "clsx";
 
 export interface TypographyProps {
   children: JSX.Element | JSX.Element[] | string | number;

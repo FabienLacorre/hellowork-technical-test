@@ -1,30 +1,34 @@
 {
-  "name": "kompanion-front",
-  "version": "0.1.0",
+  "name": "vite-project",
   "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
   "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.13.0",
+    "@types/react": "^18.3.11",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.3",
+    "eslint": "^9.13.0",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "eslint-plugin-react-refresh": "^0.4.13",
+    "globals": "^15.11.0",
+    "typescript": "~5.6.2",
+    "typescript-eslint": "^8.10.0",
+    "vite": "^5.4.9",
     "@emotion/react": "^11.13.3",
     "@emotion/styled": "^11.13.0",
     "@mui/icons-material": "^6.1.5",
     "@mui/material": "^6.1.5",
-    "@storybook/addon-actions": "^7.6.17",
-    "@storybook/addon-essentials": "^7.6.17",
-    "@storybook/addon-interactions": "^7.6.17",
-    "@storybook/addon-links": "^7.6.17",
-    "@storybook/addon-mdx-gfm": "^7.6.17",
-    "@storybook/builder-vite": "^7.6.17",
-    "@storybook/node-logger": "^7.6.17",
-    "@storybook/preset-create-react-app": "^3.2.0",
-    "@storybook/react": "^7.6.17",
-    "@storybook/react-vite": "^7.6.17",
-    "@storybook/testing-library": "^0.2.0",
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "@types/jest": "^27.5.2",
-    "@types/node": "^16.18.101",
-    "@types/react": "^18.3.3",
-    "@types/react-dom": "^18.3.0",
     "axios": "^1.7.3",
     "clsx": "^2.1.1",
     "dotenv": "^16.4.5",
@@ -34,39 +38,8 @@
     "react-dom": "^18.3.1",
     "react-query": "^3.16.0",
     "react-router-dom": "^6.24.0",
-    "react-scripts": "5.0.1",
     "sass": "^1.79.2",
     "storybook": "^7.6.17",
-    "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "storybook-with-options": "NODE_OPTIONS=--openssl-legacy-provider storybook dev -p 7878 -s public",
-    "storybook": "storybook dev -p 7878 -s public"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "devDependencies": {
-    "@types/lodash": "^4.17.5"
   }
 }
