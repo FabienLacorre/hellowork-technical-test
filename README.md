@@ -1,4 +1,4 @@
-# Technical test fullstack
+# Technical test front end developer
 
 ## Description
 
